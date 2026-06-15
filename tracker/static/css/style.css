@@ -1,0 +1,71 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+}
+/* Centering wrapper for the form */
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Ensuring page title and form align */
+.centered-form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+     margin-bottom: 20px;
+}
+
+
+
+.container {
+    margin-top: 30px;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+form button {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>All Transactions</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Note</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for t in transactions %}
+        <tr>
+            <td>{{ t.date }}</td>
+            <td>{{ t.category.name }}</td>
+            <td>₹{{ t.amount }}</td>
+            <td>{{ t.note }}</td>
+            <td>
+                <a href="{% url 'edit_transaction' t.id %}" class="btn btn-sm btn-warning">Edit</a>
+                <a href="{% url 'delete_transaction' t.id %}" class="btn btn-sm btn-danger">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
